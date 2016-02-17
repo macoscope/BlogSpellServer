@@ -30,5 +30,24 @@
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>NSServices</key>
+	<array>
+		<dict>
+			<key>NSExecutable</key>
+			<string>BlogSpellServer</string>
+			<key>NSLanguages</key>
+			<array>
+				<string>pl</string>
+			</array>
+			<key>NSMenuItem</key>
+			<dict/>
+			<key>NSPortName</key>
+			<string>BlogSpellServer</string>
+			<key>NSSpellChecker</key>
+			<string>BlogSpellServer</string>
+		</dict>
+	</array>
+	<key>LSBackgroundOnly</key>
+	<true/>
 </dict>
 </plist>

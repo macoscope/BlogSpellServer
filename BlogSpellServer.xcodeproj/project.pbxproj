@@ -7,20 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C17D05DD1C67B38500C586E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C17D05DC1C67B38500C586E6 /* AppDelegate.m */; };
 		C17D05E01C67B38500C586E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C17D05DF1C67B38500C586E6 /* main.m */; };
-		C17D05E21C67B38500C586E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C17D05E11C67B38500C586E6 /* Assets.xcassets */; };
-		C17D05E51C67B38500C586E6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C17D05E31C67B38500C586E6 /* MainMenu.xib */; };
+		C17D05EE1C67B4A200C586E6 /* BlogSpellServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C17D05ED1C67B4A200C586E6 /* BlogSpellServer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C17D05D81C67B38500C586E6 /* BlogSpellServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlogSpellServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C17D05DB1C67B38500C586E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C17D05DC1C67B38500C586E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C17D05D81C67B38500C586E6 /* BlogSpellServer.service */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlogSpellServer.service; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17D05DF1C67B38500C586E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C17D05E11C67B38500C586E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C17D05E41C67B38500C586E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		C17D05E61C67B38500C586E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C17D05EC1C67B4A200C586E6 /* BlogSpellServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogSpellServer.h; sourceTree = "<group>"; };
+		C17D05ED1C67B4A200C586E6 /* BlogSpellServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogSpellServer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +41,7 @@
 		C17D05D91C67B38500C586E6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C17D05D81C67B38500C586E6 /* BlogSpellServer.app */,
+				C17D05D81C67B38500C586E6 /* BlogSpellServer.service */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,22 +49,12 @@
 		C17D05DA1C67B38500C586E6 /* BlogSpellServer */ = {
 			isa = PBXGroup;
 			children = (
-				C17D05DB1C67B38500C586E6 /* AppDelegate.h */,
-				C17D05DC1C67B38500C586E6 /* AppDelegate.m */,
-				C17D05E11C67B38500C586E6 /* Assets.xcassets */,
-				C17D05E31C67B38500C586E6 /* MainMenu.xib */,
 				C17D05E61C67B38500C586E6 /* Info.plist */,
-				C17D05DE1C67B38500C586E6 /* Supporting Files */,
+				C17D05DF1C67B38500C586E6 /* main.m */,
+				C17D05EC1C67B4A200C586E6 /* BlogSpellServer.h */,
+				C17D05ED1C67B4A200C586E6 /* BlogSpellServer.m */,
 			);
 			path = BlogSpellServer;
-			sourceTree = "<group>";
-		};
-		C17D05DE1C67B38500C586E6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C17D05DF1C67B38500C586E6 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,7 +74,7 @@
 			);
 			name = BlogSpellServer;
 			productName = BlogSpellServer;
-			productReference = C17D05D81C67B38500C586E6 /* BlogSpellServer.app */;
+			productReference = C17D05D81C67B38500C586E6 /* BlogSpellServer.service */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -128,8 +114,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C17D05E21C67B38500C586E6 /* Assets.xcassets in Resources */,
-				C17D05E51C67B38500C586E6 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,22 +125,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C17D05E01C67B38500C586E6 /* main.m in Sources */,
-				C17D05DD1C67B38500C586E6 /* AppDelegate.m in Sources */,
+				C17D05EE1C67B4A200C586E6 /* BlogSpellServer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		C17D05E31C67B38500C586E6 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C17D05E41C67B38500C586E6 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C17D05E71C67B38500C586E6 /* Debug */ = {
@@ -247,6 +220,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.macoscope.BlogSpellServer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = service;
 			};
 			name = Debug;
 		};
@@ -259,6 +233,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.macoscope.BlogSpellServer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = service;
 			};
 			name = Release;
 		};
